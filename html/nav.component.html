@@ -1,0 +1,7 @@
+<nav>
+	<ul>
+	  <li *ngFor="#route of routes" [class.active]="isSelected('route.path')">
+	    <a [routerLink]="route.path">{{ route.name }}</a>
+	  </li> 
+	</ul>
+</nav>
